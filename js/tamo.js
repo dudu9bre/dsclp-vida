@@ -91,6 +91,9 @@ const elogios = [
     , "sofisticada"
     , "talentosa"
     , "zelosa"
+    , "radiante"
+    , "deslumbrante"
+    , "divina"
 ]
 let msga = document.querySelector(".msga")
 
