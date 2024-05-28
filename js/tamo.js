@@ -34,3 +34,72 @@ function mover(e) {
 
 document.addEventListener("mousemove", mover)
 document.addEventListener("touchmove", mover)
+
+let btn = document.querySelector(".btn")
+
+const elogios = [
+    "linda"
+    , "perfeita"
+    , "boneca"
+    , "22k"
+    , "gostosa"
+    , "bonita"
+    , "sensual"
+    , "glamourosa"
+    , "sensacional"
+    , "fofa"
+    , "majestosa"
+    , "maravilhosa"
+    , "única"
+    , "romântica"
+    , "amorosa"
+    , "inteligente"
+    , "incrível"
+    , "formosa"
+    , "esbelta"
+    , "bem feita"
+    , "graciosa"
+    , "jeitosa"
+    , "elegante"
+    , "encantadora"
+    , "estonteante"
+    , "atenciosa"
+    , "bela"
+    , "beldade"
+    , "cuidadosa"
+    , "deusa"
+    , "musa"
+    , "esperta"
+    , "esplêndida"
+    , "fantástica"
+    , "fabulosa"
+    , "gata"
+    , "gatinha"
+    , "bonequinha"
+    , "lindinha"
+    , "gênia"
+    , "galanteadora"
+    , "graciosa"
+    , "ilustre"
+    , "irresistível"
+    , "jubilosa"
+    , "magnifica"
+    , "meiga"
+    , "mimosa"
+    , "sapeca"
+    , "sexy"
+    , "sofisticada"
+    , "talentosa"
+    , "zelosa"
+]
+let msga = document.querySelector(".msga")
+
+function msg() {
+    let i = Math.floor(Math.random() * elogios.length)
+    let randomMsg = elogios[i]
+
+    msga.innerHTML = randomMsg
+}
+
+btn.addEventListener("click", msg)
+btn.addEventListener("touchend", msg)
